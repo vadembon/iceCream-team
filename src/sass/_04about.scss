@@ -40,11 +40,12 @@
     width: 280px;
     height: 279px;
     margin-right: 20px;
+    margin-left: 1px;
   }
   @include mobile {
     width: 280px;
     height: 279px;
-    margin-left: 70px;
+    margin-left: 1px;
     margin-right: 20px;
   }
   @include tablet {
