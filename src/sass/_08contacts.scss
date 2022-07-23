@@ -1,0 +1,230 @@
+:root {
+  --main-font: 'DM Sans', sans-serif;
+}
+
+.container-contact {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  background-image: linear-gradient(#ffffff 21%, #fff5f6 21%);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.card-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-card {
+  max-width: 280px;
+  min-height: 412px;
+
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 32px;
+
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  &:last-child {
+    margin-bottom: 32px;
+  }
+}
+
+// .contacts-card:last-child {
+//   margin-bottom: 32px;
+// }
+
+.contacts-card__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  width: 80px;
+
+  font-family: var(--main-font);
+  font-size: 12px;
+  line-height: 1.86;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+  background-color: #f0d1a5;
+}
+
+.contacts-card__location {
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contacts-card__city {
+  margin-top: 0;
+  margin-bottom: 8px;
+
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+
+  color: #000000;
+}
+
+.contacts-card__title--textcolor {
+  width: 130px;
+  background-color: #c2e297;
+}
+
+.contacts-card__description {
+  display: block;
+
+  margin-top: 0;
+  margin-bottom: 24px;
+  max-width: 179px;
+
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+
+  color: #907e82;
+}
+
+.contacts-card__shedule {
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contacts-card__shedule-list {
+  margin-top: 0;
+  margin-bottom: 8px;
+  padding: 0;
+  list-style: none;
+  &:last-child {
+    margin-bottom: 24px;
+  }
+}
+
+// .contacts-card__shedule-list:last-child {
+//   margin-bottom: 24px;
+// }
+
+.contacts-card__shedule-day {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: #000000;
+}
+
+.contacts-card__shedule-time {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: #ffa5ba;
+}
+
+.contacts-card__contacts-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.contacts-card__contacts-tel,
+.contacts-card__contacts-email {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+  text-decoration: none;
+
+  &:hover,
+  &:hover {
+    color: #d41443;
+  }
+}
+
+// .contacts-card__contacts-tel:hover,
+// .contacts-card__contacts-email:hover {
+//   color: #d41443;
+// }
+
+/* ___Buttons___ */
+.btn {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
+
+  width: 161px;
+  height: 44px;
+  border-radius: 22px;
+  padding-left: 17px;
+  padding-right: 30px;
+
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  border: none;
+}
+
+.main-button {
+  margin-bottom: 10px;
+
+  color: #ffffff;
+  background-color: #d41342;
+}
+
+.main-button__button-icon {
+  position: absolute;
+  /* margin-left: 8px; */
+  margin-right: 18px;
+
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+
+  fill: #ffffff;
+  width: 7px;
+  height: 10px;
+}
+
+.secondary-button {
+  color: #d41342;
+  background-color: #ffffff;
+  padding-left: 32px;
+  padding-right: 49px;
+}
+
+.main-button__button-icon--red-arrow {
+  margin-right: 31px;
+}
