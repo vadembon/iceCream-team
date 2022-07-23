@@ -1,47 +1,19 @@
-@mixin small {
-    @media screen and (min-width: 320px) and (max-width: 479px) {
-       @content; 
-    }
-}
-@mixin mobile {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-       @content; 
-    }
-}
-@mixin tablet {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-       @content; 
-    }
-}
-
-@mixin desktop {
-    @media screen and (min-width: 1200px) {
-       @content; 
-    }
-}
-.container{
-
-width: 100%;
-margin-left: auto;
-margin-right: auto;
-padding: 0 15px;
-    /*outline: 1px solid red;*/
-   @media screen and (min-width: 320px) and (max-width:479px){
+   @include small{
     max-width: 320px;
     padding: 0px 0px;
    }
-   @media screen and (min-width: 480px) and (max-width:767px){
+   @include mobile{
     max-width: 480px;
     padding: 0px 0px;
    }
-   @media screen and (min-width: 768px) and (max-width:1199px){
+   @include tablet{
     max-width: 768px;
    }
-   @media screen and (min-width: 1200px){
+   @include desktop{
     max-width: 1200px;
     padding: 0px 0px;
    }
-    }
+
 .activity__background{
     /* width: 1200px;
     height: 521px; */
@@ -51,27 +23,27 @@ padding: 0 15px;
    background-position: center;
    background-size: 100%;
    height: 521px;
-   @media screen and (min-width: 767px) and (max-width: 1199px){
+   @include tablet{
     background-image: none;
    }
-   @media screen and (min-width: 480px) and (max-width: 767px){
+   @include mobile{
     height: 985px;
     padding: none;
    }
-   @media screen and (min-width: 320px) and (max-width: 479px){
+   @include small{
     height: 1078px;
     width: 100%;
    }
    }
    .activity__background-color{
-    background-color: #FFF5F6;
+    background-color: var($about-footer-background-color);
     background-size: cover;
-    @media screen and (min-width: 480px) and (max-width: 767px){
+    @include mobile{
         
     }
 }
 .activity__wraper{
-background-color: #FFF5F6;
+background-color: var($about-footer-background-color);
   background-size: 100%;
   height: 1229px;
 }
@@ -81,18 +53,18 @@ background-color: #FFF5F6;
     width: 501px;
     margin-left: 16px;
     margin-right: 100px;
-    @media screen and (min-width: 320px) and (max-width: 479px){
+    @include small{
        width: 280px;
        height: 279px;
        margin-right: 20px; 
     }
-    @media screen and (min-width: 480px) and (max-width: 767px){
+    @include mobile{
        width: 280px;
        height: 279px; 
        margin-left: 70px;
        margin-right: 20px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px){
+    @include tablet{
         width: 336px;
         height: 335px;
         margin-right: 32px;
@@ -112,9 +84,9 @@ line-height: 34px;
 text-align: center;
 letter-spacing: 0.04em;
 text-transform: uppercase;
-color: #FFA5BA;
+color: var($light-subtitle-color);
 padding-top: 60px;
-@media screen and (min-width: 320px) and (max-width: 479px){
+@include small{
     font-size: 27px;
 }
 }
@@ -127,14 +99,14 @@ line-height: 66px;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color: #D41443;
+color: var($dark-title-color);
 margin-top: 16px;
-@media screen and (min-width: 768px) and (max-width: 1199px){
+@include tablet{
         margin-bottom: 0px;
         font-size: 48px;
         line-height: 55px;
     }
-    @media screen and (min-width: 320px) and (max-width: 479px){
+    @include small{
         font-size: 54px;
         line-height: 66px;
         letter-spacing: 00.04em;
@@ -148,23 +120,23 @@ font-size: 16px;
 line-height: 176%;
 letter-spacing: 0.04em;
 font-weight: bold;
-color: #000000;
+color: var($dark-font-color);
 display: flex;
 margin-bottom: 32px;
 margin-top: 100px;
 max-width: 463px;
-@media screen and (min-width: 320px) and (max-width: 479px){
+@include small{
     max-width: 220px;
         font-size: 12px;
         line-height: 162%;
         margin-bottom: 40px;
     }
-@media screen and (min-width: 768px) and (max-width: 1199px){
+@include tablet{
         max-width: 334px;
         font-size: 14px;
         margin-top: 52px;
     }
-@media screen and (min-width: 480px) and (max-width: 767px){
+@include mobile{
         max-width: 220px;
         font-size: 12px;
         line-height: 162%;
@@ -180,23 +152,23 @@ font-weight: 500;
 font-size: 14px;
 line-height: 194%;
 letter-spacing: 0.04em;
-color: #907E82;
+color: var($light-font-color);
 display: flex;
 margin-bottom: 32px;
 max-width: 463px;
-@media screen and (min-width: 768px) and (max-width: 1199px){
+@include tablet{
         max-width: 334px;
         margin-bottom: 0px;
         line-height: 176%;
     }
-    @media screen and (min-width: 480px) and (max-width: 767px){
+    @include mobile{
         max-width: 220px;
         font-size: 12px;
         line-height: 162%;
         margin-bottom: 0px;
         margin-left: 20px;
     }
-    @media screen and (min-width: 320px) and (max-width: 479px){
+    @include small{
         max-width: 220px;
         font-size: 12px;
         line-height: 162%;
@@ -212,15 +184,15 @@ font-weight: 500;
 font-size: 14px;
 line-height: 194%;
 letter-spacing: 0.04em;
-color: #907E82;
+color: var($light-font-color);
 display: flex;
 margin-bottom: 40px;
-@media screen and (min-width: 768px) and (max-width: 1199px){
+@include tablet{
         max-width: 334px;
         margin-bottom: 0px;
         line-height: 176%;
     }
-    @media screen and (min-width: 480px) and (max-width: 767px){
+    @include mobile{
         max-width: 220px;
         font-size: 12px;
         line-height: 162%;
@@ -228,15 +200,15 @@ margin-bottom: 40px;
     }
 }
 .activity__btn{
-background: #FFFFFF;
+background: var($white-color);
 border-radius: 22px;
-border: #FFFFFF;
+border: var($white-color);
 width: 176px;
 height: 44px;
-@media screen and (min-width: 768px) and (max-width: 1199px){
+@include tablet{
         margin-top: 40px;
     }
-@media screen and (min-width: 480px) and (max-width: 767px){
+@include mobile{
     margin-left: 20px;
 }
 }
@@ -251,7 +223,7 @@ line-height: 21px;
 display: flex;
 align-items: center;
 text-align: center;
-color: #D41443;
+color: var($dark-title-color);
 }
 
 
@@ -270,10 +242,10 @@ color: #D41443;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    @media screen and (min-width: 320px) and (max-width: 479px){
+    @include small{
     flex-wrap: nowrap;
     }
-    @media screen and (min-width: 480px) and (max-width: 767px){
+    @include mobile{
         flex-wrap: nowrap;
     }
 }
