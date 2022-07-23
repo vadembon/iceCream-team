@@ -1,8 +1,10 @@
-@import './normalize';
-@import './reset';
 @import './common';
+@import './normalize';
+@import './mixins';
 @import './vars';
+@import './reset';
 @import './example';
+
 @import './01header';
 @import './02hero';
 @import './03products';
