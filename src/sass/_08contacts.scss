@@ -46,10 +46,6 @@
   }
 }
 
-// .contacts-card:last-child {
-//   margin-bottom: 32px;
-// }
-
 .contacts-card__title {
   margin-top: 0;
   margin-bottom: 20px;
@@ -65,6 +61,7 @@
   letter-spacing: 0.04em;
 
   color: #ffffff;
+  //   background-color: $product-card2-color;
   background-color: #f0d1a5;
 }
 
@@ -142,7 +139,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
-  color: #ffa5ba;
+  color: $light-subtitle-color;
 }
 
 .contacts-card__contacts-list {
@@ -175,25 +172,22 @@
 
 /* ___Buttons___ */
 .btn {
-  position: relative;
-  display: block;
+  display: flex;
+
   margin-left: auto;
   margin-right: auto;
   align-items: center;
-  text-align: center;
+  justify-content: center;
 
   width: 161px;
   height: 44px;
   border-radius: 22px;
-  padding-left: 17px;
-  padding-right: 30px;
 
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-
   border: none;
 }
 
@@ -205,15 +199,10 @@
 }
 
 .main-button__button-icon {
-  position: absolute;
-  /* margin-left: 8px; */
-  margin-right: 18px;
+  position: relative;
+  margin-left: 9px;
 
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-
-  fill: #ffffff;
+  //   top: 2px;
   width: 7px;
   height: 10px;
 }
@@ -221,10 +210,4 @@
 .secondary-button {
   color: #d41342;
   background-color: #ffffff;
-  padding-left: 32px;
-  padding-right: 49px;
-}
-
-.main-button__button-icon--red-arrow {
-  margin-right: 31px;
 }
