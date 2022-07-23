@@ -13,3 +13,30 @@ $dark-font-color: #000000;
 $product-card1-color: #ffb8ca;
 $product-card2-color: #f0d1a5;
 $product-card3-color: #c2e297;
+
+$mobile: 320px;
+$tablet: 767.98px;
+$desktop: 1200px;
+
+.container {
+  max-width: $mobile;
+  width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  // outline: 1px solid green;
+
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+  }
+
+  @media screen and(min-width:$desktop) {
+    max-width: $desktop;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
