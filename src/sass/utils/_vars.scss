@@ -1,9 +1,15 @@
+$title-font: 'Titan One', cursive;
+$main-font: 'DM Sans', sans-serif;
+
 $hero-background-color: #ffb8ca;
 $about-footer-background-color: #fff5f6;
 $mob-menu-background: #e17992;
 $mob-menu-border: #e18298;
 $customer-border: #e1e1e1;
 $customer-background: #fafafa;
+
+$button-hover-color: #ecebeb;
+$dark-btn-color: #d41443;
 
 $white-color: #ffffff;
 $hero-circle-color: #ffa5ba;
@@ -22,26 +28,3 @@ $time-function: cubic-bezier(0.4, 0, 0.2, 1);
 $mobile: 320px;
 $tablet: 767.98px;
 $desktop: 1200px;
-
-.container {
-  max-width: $mobile;
-  width: 100%;
-
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 20px;
-  // outline: 1px solid green;
-
-  @media screen and (min-width: $tablet) {
-    max-width: $tablet;
-  }
-
-  @media screen and(min-width:$desktop) {
-    max-width: $desktop;
-  }
-}
-
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
