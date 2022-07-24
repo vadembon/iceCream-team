@@ -16,8 +16,8 @@
 .feedback__comment {
   background-image: repeating-linear-gradient(
     180deg,
-    $customer-background,
-    $customer-background 30px,
+    transparent,
+    transparent 30px,
     $customer-border 30px,
     $customer-border 31px
   );
@@ -72,9 +72,10 @@
 
 .feedback__decoration-img {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   top: 30px;
   left: 53px;
+  fill: #000000;
 }
 
 .feedback__comment-creator {
