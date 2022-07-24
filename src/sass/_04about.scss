@@ -1,4 +1,14 @@
-.activity__background {
+.about {
+  background-color: $about-footer-background-color;
+  background-size: cover;
+  @include mobile {
+  }
+}
+.about.section {
+  padding-bottom: 40px;
+}
+
+.about__background {
   /* width: 1200px;
     height: 521px; */
   background-image: url(../images/mobile/about-milk-bgr.png);
@@ -19,19 +29,14 @@
     width: 100%;
   }
 }
-.activity__background-color {
-  background-color: $about-footer-background-color;
-  background-size: cover;
-  @include mobile {
-  }
-}
-.activity__wraper {
+
+.about__wraper {
   background-color: $about-footer-background-color;
   background-size: 100%;
   height: 1229px;
 }
 
-.activity__cow-pic {
+.about__cow-pic {
   height: 501px;
   width: 501px;
   margin-left: 16px;
@@ -59,7 +64,7 @@
 ul {
   list-style: none;
 }
-.activity__title {
+.about__title {
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
@@ -74,7 +79,7 @@ ul {
     font-size: 27px;
   }
 }
-.activity__pre-title {
+.about__pre-title {
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
@@ -96,7 +101,7 @@ ul {
     letter-spacing: 00.04em;
   }
 }
-.activity__sub-title {
+.about__sub-title {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
@@ -129,7 +134,7 @@ ul {
     margin-top: 40px;
   }
 }
-.activity__paragraph {
+.about__paragraph {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
@@ -160,7 +165,7 @@ ul {
   }
 }
 
-.activity__sub-paragraph {
+.about__sub-paragraph {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
@@ -182,7 +187,7 @@ ul {
     margin-left: 20px;
   }
 }
-.activity__btn {
+.about__btn {
   background: $white-color;
   border-radius: 22px;
   border: $white-color;
@@ -195,7 +200,7 @@ ul {
     margin-left: 20px;
   }
 }
-.activity__btn-text {
+.about__btn-text {
   display: flex;
   justify-content: center;
   font-family: 'DM Sans';
@@ -209,17 +214,17 @@ ul {
   color: $dark-title-color;
 }
 
-.activity__btn:hover,
-.activity__btn:focus {
+.about__btn:hover,
+.about__btn:focus {
   background: #ecebeb;
 }
 
-.activity__display {
+.about__display {
   display: flex;
   flex-direction: column;
 }
 
-.activity__list {
+.about__list {
   // padding-right: 121px;
   display: flex;
   flex-wrap: wrap;
