@@ -24,10 +24,6 @@
     // height: 985px;
     // padding: none;
   }
-  @include small {
-    // height: 1078px;
-    // width: 100%;
-  }
 }
 
 .about__wraper {
@@ -41,12 +37,7 @@
   width: 501px;
   margin-left: 16px;
   margin-right: 100px;
-  @include small {
-    width: 280px;
-    // height: 279px;
-    margin-right: 20px;
-    margin-left: 1px;
-  }
+
   @include mobile {
     width: 280px;
     // height: 279px;
@@ -72,9 +63,6 @@
   text-transform: uppercase;
   color: $light-subtitle-color;
   // padding-top: 60px;
-  @include small {
-    font-size: 18px;
-  }
 }
 
 .about__title {
@@ -93,11 +81,6 @@
     font-size: 48px;
     line-height: 55px;
   }
-  @include small {
-    font-size: 34px;
-    line-height: 39px;
-    letter-spacing: 0.04em;
-  }
 }
 
 .about__sub-title {
@@ -113,12 +96,7 @@
   margin-bottom: 32px;
   margin-top: 100px;
   max-width: 463px;
-  @include small {
-    max-width: 220px;
-    font-size: 12px;
-    line-height: 162%;
-    margin-bottom: 40px;
-  }
+
   @include tablet {
     max-width: 334px;
     font-size: 14px;
@@ -156,12 +134,6 @@
     line-height: 162%;
     margin-bottom: 0px;
     // margin-left: 20px;
-  }
-  @include small {
-    max-width: 220px;
-    font-size: 12px;
-    line-height: 162%;
-    margin-bottom: 0px;
   }
 }
 
