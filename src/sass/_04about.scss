@@ -1,0 +1,233 @@
+.activity__background {
+  /* width: 1200px;
+    height: 521px; */
+  background-image: url(../images/mobile/about-milk-bgr.png);
+  background-repeat: no-repeat;
+  z-index: 3;
+  background-position: center;
+  background-size: 100%;
+  height: 521px;
+  @include tablet {
+    background-image: none;
+  }
+  @include mobile {
+    height: 985px;
+    padding: none;
+  }
+  @include small {
+    height: 1078px;
+    width: 100%;
+  }
+}
+.activity__background-color {
+  background-color: $about-footer-background-color;
+  background-size: cover;
+  @include mobile {
+  }
+}
+.activity__wraper {
+  background-color: $about-footer-background-color;
+  background-size: 100%;
+  height: 1229px;
+}
+
+.activity__cow-pic {
+  height: 501px;
+  width: 501px;
+  margin-left: 16px;
+  margin-right: 100px;
+  @include small {
+    width: 280px;
+    height: 279px;
+    margin-right: 20px;
+    margin-left: 1px;
+  }
+  @include mobile {
+    width: 280px;
+    height: 279px;
+    margin-left: 1px;
+    margin-right: 20px;
+  }
+  @include tablet {
+    width: 336px;
+    height: 335px;
+    margin-right: 32px;
+    margin-top: 40px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+.activity__title {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $light-subtitle-color;
+  padding-top: 60px;
+  @include small {
+    font-size: 27px;
+  }
+}
+.activity__pre-title {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 66px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $dark-title-color;
+  margin-top: 16px;
+  @include tablet {
+    margin-bottom: 0px;
+    font-size: 48px;
+    line-height: 55px;
+  }
+  @include small {
+    font-size: 54px;
+    line-height: 66px;
+    letter-spacing: 00.04em;
+  }
+}
+.activity__sub-title {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+  font-weight: bold;
+  color: $dark-font-color;
+  display: flex;
+  margin-bottom: 32px;
+  margin-top: 100px;
+  max-width: 463px;
+  @include small {
+    max-width: 220px;
+    font-size: 12px;
+    line-height: 162%;
+    margin-bottom: 40px;
+  }
+  @include tablet {
+    max-width: 334px;
+    font-size: 14px;
+    margin-top: 52px;
+  }
+  @include mobile {
+    max-width: 220px;
+    font-size: 12px;
+    line-height: 162%;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+}
+.activity__paragraph {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 194%;
+  letter-spacing: 0.04em;
+  color: $light-font-color;
+  display: flex;
+  margin-bottom: 32px;
+  max-width: 463px;
+  @include tablet {
+    max-width: 334px;
+    margin-bottom: 0px;
+    line-height: 176%;
+  }
+  @include mobile {
+    max-width: 220px;
+    font-size: 12px;
+    line-height: 162%;
+    margin-bottom: 0px;
+    margin-left: 20px;
+  }
+  @include small {
+    max-width: 220px;
+    font-size: 12px;
+    line-height: 162%;
+    margin-bottom: 0px;
+  }
+}
+
+.activity__sub-paragraph {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 194%;
+  letter-spacing: 0.04em;
+  color: $light-font-color;
+  display: flex;
+  margin-bottom: 40px;
+  @include tablet {
+    max-width: 334px;
+    margin-bottom: 0px;
+    line-height: 176%;
+  }
+  @include mobile {
+    max-width: 220px;
+    font-size: 12px;
+    line-height: 162%;
+    margin-left: 20px;
+  }
+}
+.activity__btn {
+  background: $white-color;
+  border-radius: 22px;
+  border: $white-color;
+  width: 176px;
+  height: 44px;
+  @include tablet {
+    margin-top: 40px;
+  }
+  @include mobile {
+    margin-left: 20px;
+  }
+}
+.activity__btn-text {
+  display: flex;
+  justify-content: center;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $dark-title-color;
+}
+
+.activity__btn:hover,
+.activity__btn:focus {
+  background: #ecebeb;
+}
+
+.activity__display {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity__list {
+  // padding-right: 121px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  @include small {
+    flex-wrap: nowrap;
+  }
+  @include mobile {
+    flex-wrap: nowrap;
+  }
+}
