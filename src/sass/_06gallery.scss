@@ -1,0 +1,30 @@
+.gallery-img {
+    display: block;
+    margin: 0 auto;
+    @media screen and (max-width: 319px) {width: 100%;}
+    @media screen and (min-width: 320px) {max-width: 100%;}
+
+    }
+    
+    .gallery {
+    text-align: center;
+    padding-top: 60px;
+    background-image: linear-gradient(
+    to bottom,
+    $about-footer-background-color 88px,
+    $white-color 88px);
+    @media screen and (min-width: 768px) {background-image: linear-gradient(
+        to bottom,
+        $about-footer-background-color 245px,
+        $white-color 245px);}
+    
+    @media screen and (min-width: 1200px) {
+        padding-left: 93px;
+        padding-right: 94px;
+        padding-bottom: 60px;
+        background-image: linear-gradient(
+            to bottom,
+            $about-footer-background-color 147px,
+            $white-color 147px);}  
+
+    }
