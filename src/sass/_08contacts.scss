@@ -2,7 +2,11 @@
   --main-font: 'DM Sans', sans-serif;
 }
 
-.container-contact {
+.section.contact {
+  padding-top: 0;
+}
+
+.contact {
   background-image: linear-gradient(
     $white-color 21%,
     $about-footer-background-color 21%
