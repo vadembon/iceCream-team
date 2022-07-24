@@ -1,0 +1,97 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms $time-function, visibility 250ms $time-function;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+
+  & .modal {
+    @media (max-width: $desktop) {
+      transform: translate(0, 0) scale(0, 0);
+    }
+    transform: translate(-50%, -50%) scale(0, 0);
+  }
+}
+
+.modal {
+  @media (max-width: $desktop) {
+    position: relative;
+
+    margin: 50px auto 0;
+    overflow: auto;
+
+    max-width: 320px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 528px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  padding: 60px 40px 40px;
+  background-color: #ffb8ca;
+  // background-image: url(../images/mobile/about-cow.png);
+  // background-size: 70px;
+  // background-repeat: no-repeat;
+  // // background-position: bottom left;
+  border-radius: 20px;
+  border: #fff solid 10px;
+  transform: translate(0, 0) scale(1, 1);
+  transition: transform 250ms $time-function;
+}
+
+.modal__close-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+
+  background-color: #ffb8ca;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  // &:hover {
+  //   fill: $accent-color;
+  // }
+}
+
+.modal-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.modal__text {
+  position: relative;
+  z-index: 2;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.76;
+  color: #ffffff;
+
+  text-align: justify;
+}
