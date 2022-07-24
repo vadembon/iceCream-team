@@ -1,85 +1,88 @@
-.activity__background {
-  /* width: 1200px;
-    height: 521px; */
-  background-image: url(../images/mobile/about-milk-bgr.png);
-  background-repeat: no-repeat;
-  z-index: 3;
-  background-position: center;
-  background-size: 100%;
-  height: 521px;
-  @include tablet {
-    background-image: none;
-  }
-  @include mobile {
-    height: 985px;
-    padding: none;
-  }
-  @include small {
-    height: 1078px;
-    width: 100%;
-  }
-}
-.activity__background-color {
+.about {
   background-color: $about-footer-background-color;
   background-size: cover;
   @include mobile {
   }
 }
-.activity__wraper {
-  background-color: $about-footer-background-color;
-  background-size: 100%;
-  height: 1229px;
+.about.section {
+  padding-bottom: 40px;
 }
 
-.activity__cow-pic {
-  height: 501px;
+.about__background {
+  /* width: 1200px;
+    height: 521px; */
+  background-image: url(../images/mobile/about-milk-bgr.png);
+  background-repeat: no-repeat;
+  z-index: 3;
+  background-position: 50% 72%;
+  background-size: 280px;
+  // height: 521px;
+  @include tablet {
+    background-image: none;
+  }
+  @include mobile {
+    // height: 985px;
+    // padding: none;
+  }
+  @include small {
+    // height: 1078px;
+    // width: 100%;
+  }
+}
+
+.about__wraper {
+  background-color: $about-footer-background-color;
+  background-size: 100%;
+  // height: 1229px;
+}
+
+.about__cow-pic {
+  // height: 501px;
   width: 501px;
   margin-left: 16px;
   margin-right: 100px;
   @include small {
     width: 280px;
-    height: 279px;
+    // height: 279px;
     margin-right: 20px;
     margin-left: 1px;
   }
   @include mobile {
     width: 280px;
-    height: 279px;
+    // height: 279px;
     margin-left: 1px;
     margin-right: 20px;
   }
   @include tablet {
     width: 336px;
-    height: 335px;
+    // height: 335px;
     margin-right: 32px;
     margin-top: 40px;
   }
 }
 
-ul {
-  list-style: none;
-}
-.activity__title {
+.about__pre-title {
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 34px;
+  font-size: 18px;
+  line-height: 21px;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $light-subtitle-color;
-  padding-top: 60px;
+  // padding-top: 60px;
   @include small {
-    font-size: 27px;
+    font-size: 18px;
   }
 }
-.activity__pre-title {
+
+.about__title {
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
-  font-size: 58px;
-  line-height: 66px;
+  font-size: 34px;
+  line-height: 39px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -91,12 +94,13 @@ ul {
     line-height: 55px;
   }
   @include small {
-    font-size: 54px;
-    line-height: 66px;
-    letter-spacing: 00.04em;
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 0.04em;
   }
 }
-.activity__sub-title {
+
+.about__sub-title {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
@@ -125,11 +129,12 @@ ul {
     font-size: 12px;
     line-height: 162%;
     margin-bottom: 40px;
-    margin-left: 20px;
+    // margin-left: 20px;
     margin-top: 40px;
   }
 }
-.activity__paragraph {
+
+.about__paragraph {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
@@ -150,7 +155,7 @@ ul {
     font-size: 12px;
     line-height: 162%;
     margin-bottom: 0px;
-    margin-left: 20px;
+    // margin-left: 20px;
   }
   @include small {
     max-width: 220px;
@@ -160,7 +165,7 @@ ul {
   }
 }
 
-.activity__sub-paragraph {
+.about__sub-paragraph {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
@@ -179,10 +184,12 @@ ul {
     max-width: 220px;
     font-size: 12px;
     line-height: 162%;
-    margin-left: 20px;
+    // margin-left: 20px;
+    margin-top: 20px;
   }
 }
-.activity__btn {
+
+.about__btn {
   background: $white-color;
   border-radius: 22px;
   border: $white-color;
@@ -195,7 +202,8 @@ ul {
     margin-left: 20px;
   }
 }
-.activity__btn-text {
+
+.about__btn-text {
   display: flex;
   justify-content: center;
   font-family: 'DM Sans';
@@ -209,25 +217,12 @@ ul {
   color: $dark-title-color;
 }
 
-.activity__btn:hover,
-.activity__btn:focus {
+.about__btn:hover,
+.about__btn:focus {
   background: #ecebeb;
 }
 
-.activity__display {
+.about__display {
   display: flex;
   flex-direction: column;
-}
-
-.activity__list {
-  // padding-right: 121px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  @include small {
-    flex-wrap: nowrap;
-  }
-  @include mobile {
-    flex-wrap: nowrap;
-  }
 }

@@ -1,0 +1,30 @@
+<section class="gallery section">
+  <div class="container-gallery container">
+    <picture class="gallery-image">
+      <!-- <source srcset="./images/gallery-desc-1x.png 1x, ./images/gallery-desc-2x.png 2x" media="(min-width: 1200px)" /> -->
+      <source
+        srcset="./images/tablet/galery.jpg 1x, ./images/tablet/galery@2x.jpg 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/mobile/galery-group.png    1x,
+          ./images/mobile/galery-group@2x.png 2x
+        "
+        media="(min-width: 320px)"
+      />
+      <source
+        srcset="
+          images/mobile/galery-group.png      1x,
+          ./images/mobile/galery-group@2x.png 2x
+        "
+        media="(max-width: 320px)"
+      />
+      <img
+        class="gallery-img"
+        src="./images/mobile/galery-group.png"
+        alt="gallery icecream"
+      />
+    </picture>
+  </div>
+</section>
