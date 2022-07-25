@@ -1,6 +1,14 @@
 body {
   font-family: $main-font;
   font-size: 12px;
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  @include desctop {
+    font-size: 16px;
+  }
 }
 
 .no-scroll {
