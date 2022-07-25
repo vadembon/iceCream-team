@@ -1,17 +1,26 @@
 @import './common';
-@import './normalize';
-@import './mixins';
-@import './vars';
-@import './reset';
-@import './example';
 
-@import './01header';
-@import './02hero';
-@import './03products';
-@import './04about';
-@import './05advantages';
-@import './06gallery';
-@import './07customer-reviews';
-@import './08contacts';
-@import './09footer';
-@import './modal-about';
+@import './utils/vars';
+@import './utils/mixins';
+@import './utils/visually-hidden';
+
+@import './base/normalize';
+@import './base/reset';
+@import './base/body';
+@import './base/section';
+@import './base/container';
+
+@import './components/buttons';
+@import './components/titles';
+@import './components/slider-dots';
+@import './components/modal-about';
+
+@import './layouts/01header';
+@import './layouts/02hero';
+@import './layouts/03products';
+@import './layouts/04about';
+@import './layouts/05advantages';
+@import './layouts/06gallery';
+@import './layouts/07customer-reviews';
+@import './layouts/08contacts';
+@import './layouts/09footer';

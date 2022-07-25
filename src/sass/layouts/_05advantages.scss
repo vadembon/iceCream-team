@@ -1,14 +1,11 @@
 .section.advantage {
   padding: 0;
 }
+
 .advantage {
   background-color: $about-footer-background-color;
 }
-.container {
-}
-.advantage__title {
-  display: none;
-}
+
 .advantage__list {
   display: flex;
   flex-wrap: wrap;
@@ -17,8 +14,7 @@
 .advantage__item {
   width: 100%;
 }
-.advantage__icon {
-}
+
 .advantage__subtitle {
   margin-top: 16px;
 
@@ -32,6 +28,7 @@
 
   color: #d41443;
 }
+
 .advantage__text {
   margin-top: 20px;
   width: 220px;
