@@ -16,20 +16,22 @@
     <picture class="hero__img">
       <source
         srcset="
-          ../src/images/tablet/hero-ice-cream.png    1x,
-          ../src/images/tablet/hero-ice-cream@2x.png 2x
+          ./images/tablet/hero-ice-cream.png    1x,
+          ./images/tablet/hero-ice-cream@2x.png 2x
         "
-        media="screen and (min-widht: 768px)"
+        media="(min-width: 768px)"
+        type="image/png"
       />
 
       <source
         srcset="
-          ../src/images/mobile/hero-img.png    1x,
-          ../src/images/mobile/hero-img@2x.png 2x
+          ./images/mobile/hero-img.png    1x,
+          ./images/mobile/hero-img@2x.png 2x
         "
-        media="screen and (min-widht: 320px)"
+        media="(min-width: 320px)"
+        type="image/png"
       />
-      <img src="../src/images/mobile/hero-img.png" alt="морозиво ріжок" />
+      <img src="./images/mobile/hero-img.png" alt="морозиво ріжок" />
     </picture>
   </div>
 </section>
