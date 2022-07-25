@@ -22,6 +22,10 @@
   background-size: 345px;
   background-repeat: no-repeat;
   background-position: right calc(-43px + 50%) top 25px;
+  @media screen and (min-width: $tablet) {
+    height: 336px;
+    padding-top: 20px;
+  }
 }
 .hero__box {
   position: absolute;
@@ -37,6 +41,9 @@
   text-transform: uppercase;
 
   color: #ffffff;
+  @media screen and (min-width: $tablet) {
+    color: #d41443;
+  }
 }
 .hero__title-part {
   font-size: 48px;
@@ -55,7 +62,6 @@
   font-size: 8px;
   line-height: 1.25;
   border-radius: 20px;
-  $time-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms $time-function, color 250ms $time-function;
   &:hover,
   &:focus {
@@ -75,8 +81,11 @@
   color: #d41443;
 }
 .hero__img {
+  // width: 100%;
+  // display: block;
   position: absolute;
   z-index: 1;
   left: calc(-43px + 50%);
-  top: 103px;
+  // top: 103px;
+  top: 34px;
 }
