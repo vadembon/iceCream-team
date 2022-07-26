@@ -1,5 +1,6 @@
 .header {
   position: relative;
+
   background: $hero-background-color;
 }
 
@@ -7,15 +8,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 8px;
 
   @include tablet {
     padding-top: 32px;
-  }
-
-  @include desktop {
-    position: fixed;
-    z-index: 10;
-    width: 100vw;
   }
 }
 
@@ -25,9 +21,6 @@
 }
 
 // --------------------------------------------------Burger--------------------------------------------------------------
-.header__logo {
-  padding: 8px 0;
-}
 
 .menu-btn {
   background-color: transparent;
@@ -239,6 +232,9 @@
 .header-nav__list {
   display: flex;
   gap: 35px;
+}
+
+.header-nav__item {
 }
 
 .header-nav__link {
