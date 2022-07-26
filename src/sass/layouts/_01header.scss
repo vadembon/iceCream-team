@@ -5,6 +5,9 @@
 
   @include tablet {
     position: absolute;
+    width: -webkit-fill-available;
+    background-color: transparent;
+    z-index: 1;
   }
 }
 
@@ -63,6 +66,7 @@
 
 .burger-menu {
   @include mobile {
+    z-index: 3;
     padding-top: 60px;
     height: 100vh;
     position: fixed;
@@ -233,9 +237,6 @@
 .header-nav__list {
   display: flex;
   gap: 35px;
-}
-
-.header-nav__item {
 }
 
 .header-nav__link {

@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   background-color: $hero-background-color;
   padding-top: 136px;
   width: 100%;
@@ -145,8 +146,12 @@
   @media screen and (max-width: $tablet) {
     display: none;
   }
+  @include tablet {
+    padding-right: 10px;
+  }
   @include desktop {
     padding-right: 18px;
+    z-index: 0;
   }
 }
 .hero__number {
