@@ -23,10 +23,10 @@
   background-repeat: no-repeat;
   background-position: right calc(-43px + 50%) top 25px;
   @include tablet {
-    height: 336px;
-    padding-top: 12px;
+    height: 416px;
+    padding-top: 94px;
     background-size: 335px;
-    background-position: right calc(-33px + 50%) top -40px;
+    background-position: right calc(-33px + 50%) top 43px;
   }
 }
 
@@ -118,6 +118,7 @@
 }
 .hero__number {
   position: relative;
+  z-index: 1;
   font-family: 'Titan One';
   font-size: 28px;
   line-height: 1.14;
@@ -128,6 +129,7 @@
   &::after {
     content: '';
     position: absolute;
+    z-index: -1;
     top: -2px;
     right: -10px;
     display: block;
@@ -159,6 +161,9 @@
   color: $white-color;
   margin-bottom: 7px;
 }
+.hero__button {
+  border-radius: 50%;
+}
 .hero__img-girl {
   position: relative;
   bottom: -20px;
@@ -173,6 +178,6 @@
   top: 34px;
   @include tablet {
     left: calc(-63px + 50%);
-    top: 0;
+    top: 80px;
   }
 }
