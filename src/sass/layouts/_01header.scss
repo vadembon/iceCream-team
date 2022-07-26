@@ -2,6 +2,10 @@
   position: relative;
 
   background: $hero-background-color;
+
+  @include tablet {
+    position: absolute;
+  }
 }
 
 .header-container {
