@@ -2,43 +2,156 @@
   padding: 0;
 }
 
+
 .advantage {
   background-color: $about-footer-background-color;
 }
 
+
+
 .advantage__list {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 32px;
+  @include tablet {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 22px;
+  }
+  @include desktop{
+    gap: 115px;
+  }
 }
+
+
+
 .advantage__item {
-  width: 100%;
+  margin-top: 66px;
+  &:first-child{
+margin-top: 106px;
+  }
+  @include tablet {
+      margin-top: 146px;
+      &:first-child{
+          margin-top: 146px;
+              }
+     }
+     @include desktop{
+   width: 100%;
+   margin-top: 211px;
+   &:first-child{
+      margin-top: 211px;
+          }
 }
+}
+
+
+
 
 .advantage__subtitle {
-  margin-top: 16px;
 
-  font-family: 'Titan One';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 41px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-
-  color: #d41443;
+font-family: $title-font;
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 1.13;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #D41443;
+margin-bottom: 4px;
+position: relative;
+height: 56px;
+@include tablet{
+  margin-bottom: 13px;
+font-size: 48px;
+line-height: 1.14;
+text-transform: none;
 }
 
+@include desktop{
+  margin-bottom: 16px;
+  font-size: 58px;
+line-height: 1.13;
+height: 65px;
+}
+}
+
+
+
+.cow-milk::before{
+  content: '';
+  top: -66px;
+  width: 33px;
+  height: 50px;
+  background-size: 33px 50px;
+  position: absolute;
+  background-image: url(../images/desktop/advantages-1.png);
+  @include tablet{
+    top: -86px;
+  }
+  @include desktop{
+    top: -90px;
+  }
+}
+
+
+
+
+.apple::before{
+  content: '';
+  top: -66px;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  position: absolute;
+  background-image: url(../images/desktop/advantages-2.png);
+  @include tablet{
+    top: -86px;
+  }
+  @include desktop{
+    top: -90px;
+  }
+}
+
+
+
+.heart::before{
+  content: '';
+  top: -66px;
+  width: 44px;
+  height: 50px;
+  background-size: 44px 50px;
+  position: absolute;
+  background-image: url(../images/desktop/advantages-3.png);
+  @include tablet{
+    top: -86px;
+  }
+  @include desktop{
+    top: -90px;
+  }
+}
+
+
 .advantage__text {
-  margin-top: 20px;
   width: 220px;
-
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 170%;
-  /* or 20px */
-
-  color: #000000;
+  font-family: $main-font;
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 20px;
+/* or 20px */
+color: #000000;
+@include tablet{
+  width: 162px;
+font-size: 14px;
+line-height: 174%;
+}
+ @include desktop{
+  font-size: 16px;
+ line-height: 176%;
+ /* or 28px */
+ letter-spacing: 0.02em;
+ width: 288px;
+}
 }
