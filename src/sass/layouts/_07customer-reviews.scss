@@ -36,6 +36,32 @@
   margin: 0 auto;
   z-index: 3;
   position: relative;
+  @media screen and (min-width: $tablet) {
+      max-width: 514px;
+      
+      font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 216%;
+        /* or 30px */
+      
+        text-align: center;
+        letter-spacing: 0.04em;
+      
+    }
+        @media screen and (min-width: $desktop) {
+          max-width: 750px;
+          font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 186%;
+            /* or 30px */
+          
+            text-align: center;
+            letter-spacing: 0.04em;
+        }
 }
 
 // .lines-img {
@@ -67,7 +93,25 @@
   margin: 0 auto;
   position: relative;
   height: 308px;
-  margin: 0;
+  margin: 0 auto;
+  @media screen and (min-width: $tablet) {
+    
+      width: 620px;
+      height: 164px;
+      padding-right: 50px;
+      padding-left: 55px;
+      padding-top: 37px;
+      padding-bottom: 44px;
+    }
+        @media screen and (min-width: $desktop) {
+         
+          width: 968px;
+          height: 138px;
+          padding-left: 72px;
+          padding-right: 74px;
+          padding-top: 32px;
+          padding-bottom: 31px;
+        }
 }
 
 .feedback__decoration-img {
@@ -76,6 +120,15 @@
   top: 30px;
   left: 53px;
   fill: #000000;
+  @media screen and (min-width: $tablet) {
+      left: 20px;
+      top: 20px;
+    }
+        @media screen and (min-width: $desktop) {
+          
+          left: 72px;
+          top: 32px;
+        }
 }
 
 .feedback__comment-creator {
@@ -108,4 +161,44 @@
   border-radius: 50%;
   width: 12px;
   height: 12px;
+}
+.slick-track{
+  display: flex;
+  z-index: 2;
+}
+.slick-list{
+  overflow:hidden;
+}
+.feedback__wrap{
+  min-width: 0;
+}
+.slider .slick-arrow{
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  background: #d9d9d9;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+
+ 
+}
+.slider .slick-arrow .slick-prev{
+left: 0;
+top: 20;
+background: tomato;
+left: 0;
+}
+.slider .slick-arrow .slick-next{
+  right: 0;
+}
+
+.slider{
+  position: relative;
+}
+.slick-dots .slick-active{
+  background-image: url(../images/home-icon.png);
+  background-repeat: no-repeat;
+  z-index: 1;
 }
