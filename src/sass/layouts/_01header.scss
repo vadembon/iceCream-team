@@ -1,6 +1,5 @@
 .header {
   position: relative;
-
   background: $hero-background-color;
 }
 
@@ -11,6 +10,12 @@
 
   @include tablet {
     padding-top: 32px;
+  }
+
+  @include desktop {
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
   }
 }
 
@@ -193,13 +198,9 @@
     display: none;
   }
 
-  // @include small {
-  //   display: none;
-  // }
-
-  // @include mobile {
-  //   display: none;
-  // }
+  @media screen and (max-width: 1199px) {
+    margin-left: 32px;
+  }
 }
 
 .burger-nav__list {
@@ -230,21 +231,11 @@
   @media screen and (max-width: 1199px) {
     display: none;
   }
-  // @include mobile {
-  //   display: none;
-  // }
-
-  // @include tablet {
-  //   display: none;
-  // }
 }
 
 .header-nav__list {
   display: flex;
   gap: 35px;
-}
-
-.header-nav__item {
 }
 
 .header-nav__link {
