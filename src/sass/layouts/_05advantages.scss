@@ -2,9 +2,12 @@
   padding: 0;
 }
 
+
 .advantage {
   background-color: $about-footer-background-color;
 }
+
+
 
 .advantage__list {
   display: flex;
@@ -20,6 +23,9 @@
     gap: 115px;
   }
 }
+
+
+
 .advantage__item {
   margin-top: 66px;
   &:first-child{
@@ -40,9 +46,12 @@ margin-top: 106px;
 }
 }
 
+
+
+
 .advantage__subtitle {
 
-font-family: 'Titan One';
+font-family: $title-font;
 font-style: normal;
 font-weight: 400;
 font-size: 36px;
@@ -51,7 +60,6 @@ letter-spacing: 0.04em;
 text-transform: uppercase;
 color: #D41443;
 margin-bottom: 4px;
-
 position: relative;
 height: 56px;
 @include tablet{
@@ -67,8 +75,9 @@ text-transform: none;
 line-height: 1.13;
 height: 65px;
 }
-
 }
+
+
 
 .cow-milk::before{
   content: '';
@@ -85,6 +94,10 @@ height: 65px;
     top: -90px;
   }
 }
+
+
+
+
 .apple::before{
   content: '';
   top: -66px;
@@ -100,6 +113,8 @@ height: 65px;
     top: -90px;
   }
 }
+
+
 
 .heart::before{
   content: '';
@@ -120,7 +135,7 @@ height: 65px;
 
 .advantage__text {
   width: 220px;
-  font-family: 'DM Sans';
+  font-family: $main-font;
 font-style: normal;
 font-weight: 700;
 font-size: 12px;
