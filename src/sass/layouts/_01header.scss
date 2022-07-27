@@ -1,13 +1,22 @@
 .header {
-  position: relative;
-
+  position: absolute;
+  width: -webkit-fill-available;
   background: $hero-background-color;
+  z-index: 2;
 
   @include tablet {
-    position: absolute;
+    position: fixed;
+    width: -webkit-fill-available;
+    background-color: transparent;
+    z-index: 3;
   }
 }
-
+.header-scroll {
+  @include desktop {
+    position: fixed;
+    z-index: 3;
+  }
+}
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -33,6 +42,13 @@
   @include desktop {
     display: none;
   }
+}
+
+.burger-menu__icon-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 7;
 }
 
 .menu-btn .menu-btn__close {
@@ -62,7 +78,9 @@
 }
 
 .burger-menu {
+  position: relative;
   @include mobile {
+    z-index: 3;
     padding-top: 60px;
     height: 100vh;
     position: fixed;
@@ -233,9 +251,6 @@
 .header-nav__list {
   display: flex;
   gap: 35px;
-}
-
-.header-nav__item {
 }
 
 .header-nav__link {
