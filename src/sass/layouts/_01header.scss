@@ -44,43 +44,43 @@
   }
 }
 
-.burger-menu__icon-close {
+.menu-close-btn {
   position: absolute;
   top: 10px;
   right: 15px;
-  z-index: 7;
+  z-index: 3;
 }
 
-.menu-btn .menu-btn__close {
-  display: none;
+// .menu-btn .menu-btn__close {
+//   display: none;
 
-  fill: $mob-menu-background;
-}
+//   fill: $mob-menu-background;
+// }
 
-.menu-btn.is-open .menu-btn__close {
-  display: block;
-}
+// .menu-btn.is-open .menu-btn__close {
+//   display: block;
+// }
 
-.menu-btn.is-open .menu-btn__burger {
-  display: none;
-}
+// .menu-btn.is-open .menu-btn__burger {
+//   display: none;
+// }
 
-.menu-btn.is-open {
-  z-index: 6;
-  right: 20px;
-  top: 20px;
+// .menu-btn.is-open {
+//   z-index: 6;
+//   right: 20px;
+//   top: 20px;
 
-  @include tablet {
-    position: relative;
-    left: 180px;
-    top: -35px;
-  }
-}
+//   @include tablet {
+//     position: relative;
+//     left: 180px;
+//     top: -35px;
+//   }
+// }
 
 .burger-menu {
   position: relative;
   @include mobile {
-    z-index: 3;
+    z-index: 4;
     padding-top: 60px;
     height: 100vh;
     position: fixed;
@@ -132,10 +132,11 @@
     background: $white-color;
     color: $dark-title-color;
 
-    &__logo {
+    &-logo {
       margin-left: 16px;
       position: relative;
       top: 1px;
+      // left: 16px;
     }
 
     @include tablet {
@@ -145,7 +146,7 @@
   }
 }
 
-.burger-menu.is-open {
+.burger-menu {
   @include mobile {
     padding-top: 60px;
     width: 100vw;
