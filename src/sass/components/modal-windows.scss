@@ -60,6 +60,154 @@
 
 // ------------------------------------modal-1-------------------------
 // Пишем свои стили здесь
+.modal-buy {
+  position: fixed;
+
+  flex-direction: column;
+  display: flex;
+  border: none;
+  background-color: $hero-background-color;
+
+  background-image: url(../images/desktop/product-1.png);
+
+  background-repeat: no-repeat;
+
+  @include mobile {
+    width: 300px;
+    height: 400px;
+
+    top: 220px;
+    background-position: right calc(50% - 50px) bottom 0px;
+    background-size: 100%;
+  }
+
+  @include tablet {
+    width: 600px;
+    height: 250px;
+
+    background-position: right calc(50% - 135px) bottom -50px;
+
+    background-size: 55%;
+
+    top: 35%;
+    left: 50%;
+  }
+
+  @include desktop {
+    width: 600px;
+    height: 250px;
+
+    background-position: right calc(50% - 135px) bottom -50px;
+
+    background-size: 55%;
+
+    top: 50%;
+    left: 50%;
+  }
+
+  &__choice {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0 5px;
+    padding-bottom: 10px;
+  }
+
+  &__title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $product-card3-color;
+
+    padding-bottom: 15px;
+  }
+
+  &__label {
+    font-family: $title-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $dark-btn-color;
+  }
+
+  &__select {
+    font-family: $title-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 0.9;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: $dark-btn-color;
+    background-color: $product-card3-color;
+
+    border: none;
+    border-radius: 4px;
+
+    position: relative;
+    left: 110px;
+    bottom: 15px;
+    width: 95px;
+  }
+
+  &__option {
+    font-family: $title-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 0.9;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $dark-btn-color;
+    background-color: $product-card3-color;
+  }
+
+  &__btn {
+    width: 120px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: $dark-title-color;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    font-family: $title-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 0.9;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $product-card3-color;
+  }
+
+  &__icon {
+    fill: $product-card3-color;
+    margin-left: 8px;
+  }
+}
+
+.main__close-icon {
+}
+.js-modal-close {
+}
 
 // ------------------------------------modal-2-------------------------
 // Пишем свои стили здесь
