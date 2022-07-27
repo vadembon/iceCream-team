@@ -2,7 +2,7 @@
   position: absolute;
   width: -webkit-fill-available;
   background: $hero-background-color;
-  z-index: 2;
+  z-index: 3;
 
   @include tablet {
     position: fixed;
@@ -148,7 +148,7 @@
   }
 }
 
-.burger-menu.is-hidden {
+.burger-menu.is-none {
   @include mobile {
     padding-top: 60px;
     width: 100vw;
