@@ -142,7 +142,7 @@
     }
 
     @include tablet {
-      width: 180px;
+      width: 186px;
       height: 44px;
     }
   }
@@ -174,7 +174,7 @@
     position: fixed;
     z-index: 5;
 
-    transform: translate(100%);
+    transform: translateX(100%);
     transition: transform 600ms $time-function;
 
     background-color: $mob-menu-background;
@@ -276,5 +276,111 @@
 }
 
 .current {
+  color: $dark-title-color;
+}
+
+@-webkit-keyframes header-nav__link {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes header-nav__link {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+.header-nav__link:hover,
+.header-nav__link:focus,
+.header-nav__link:active {
+  -webkit-animation-name: header-nav__link;
+  animation-name: header-nav__link;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes header-btn {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes header-btn {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+.header-btn:hover,
+.header-btn:focus,
+.header-btn:active {
+  -webkit-animation-name: header-btn;
+  animation-name: header-btn;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes burger-nav__link {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes burger-nav__link {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+.burger-nav__link:hover,
+.burger-nav__link:focus,
+.burger-nav__link:active {
+  -webkit-animation-name: burger-nav__link;
+  animation-name: burger-nav__link;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  color: $dark-title-color;
+}
+
+@-webkit-keyframes burger-menu__btn {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes burger-menu__btn {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+.burger-menu__btn:hover,
+.burger-menu__btn:focus,
+.burger-menu__btn:active {
+  -webkit-animation-name: burger-menu__btn;
+  animation-name: burger-menu__btn;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
   color: $dark-title-color;
 }
