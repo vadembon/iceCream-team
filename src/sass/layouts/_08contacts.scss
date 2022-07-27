@@ -286,6 +286,9 @@
   line-height: 1.31;
 }
 
+.icored {
+  opacity: 0;
+}
 .main-button {
   margin-bottom: 10px;
 
@@ -303,14 +306,26 @@
     margin-right: 6px;
     margin-left: 0;
   }
+
+  &:hover .icowhite {
+    opacity: 0;
+  }
+
+  &:hover .icored {
+    opacity: 1;
+  }
 }
 
 .main-button__button-icon {
   position: relative;
   margin-left: 9px;
-  fill: aqua;
-  width: 7px;
-  height: 10px;
+  fill: currentColor;
+  width: 10px;
+  height: 12px;
+
+  &:hover {
+    fill: red;
+  }
 }
 
 .secondary-button {
@@ -327,6 +342,11 @@
     margin-bottom: 0;
     margin-right: 0;
     margin-left: 6px;
+  }
+
+  &:hover {
+    fill: red;
+    color: darkorange;
   }
 }
 
