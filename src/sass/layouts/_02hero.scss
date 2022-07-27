@@ -3,7 +3,7 @@
   background-color: $hero-background-color;
   padding-top: 136px;
   width: 100%;
-  height: 444px;
+  height: 502px;
   background-image: url(../images/mobile/hero-bgr-circle.png),
     radial-gradient(
       circle,
@@ -22,7 +22,7 @@
   }
   background-size: 346px;
   background-repeat: no-repeat;
-  background-position: right calc(-43px + 50%) top 25px;
+  background-position: right calc(-43px + 50%) top 116px;
   @include tablet {
     height: 416px;
     padding-top: 94px;
@@ -240,7 +240,7 @@
   position: absolute;
   z-index: 1;
   left: calc(-43px + 50%);
-  top: 34px;
+  top: 92px;
   @include tablet {
     left: calc(-63px + 50%);
     top: 80px;
