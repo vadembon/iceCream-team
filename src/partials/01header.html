@@ -5,7 +5,7 @@
         <use href="./images/sprite.svg#icon-logo"></use>
       </svg>
     </a>
-    <button type="button" class="menu-btn menu-open-btn" data-menu-button>
+    <button type="button" class="menu-btn menu-open-btn">
       <svg aria-label="mobile menu switch" width="20" height="20">
         <use
           href="./images/sprite.svg#icon-Burger"
@@ -38,7 +38,7 @@
       </ul>
     </nav>
 
-    <button type="button" class="header-btn">
+    <button type="button" class="header-btn js-open-modal" data-modal="1">
       Buy now
       <svg class="header-btn__logo" width="6" height="8">
         <use href="./images/sprite.svg#icon-btn-arrow"></use>
@@ -46,13 +46,17 @@
     </button>
 
     <div class="burger-menu is-hidden" data-menu>
-      <button type="button" class="menu-btn menu-close-btn" data-menu-button>
+      <button type="button" class="menu-btn menu-close-btn">
         <svg width="20" height="20">
           <use href="./images/sprite.svg#icon-close"></use>
         </svg>
       </button>
 
-      <button type="button" class="burger-menu__btn">
+      <button
+        type="button"
+        class="burger-menu__btn js-open-modal"
+        data-modal="1"
+      >
         Buy now
         <svg class="burger-menu__btn-logo" width="6" height="8">
           <use href="./images/sprite.svg#icon-btn-arrow"></use>
