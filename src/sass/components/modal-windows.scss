@@ -32,7 +32,7 @@
   z-index: 30; /* Должен быть выше чем у подложки*/
 
   /*  Побочные стили   */
-  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
   padding: 30px;
   border-radius: 3px;
@@ -66,12 +66,59 @@
 
 // ------------------------------------modal-3-------------------------
 // Пишем свои стили здесь
+.modal-3 {
+  width: 478px;
+  height: 512px;
+  padding: 60px 80px;
+  background-color: transparent;
+  background-image: url(../images/desktop/product-1@2x.png),
+    linear-gradient(180deg, transparent, transparent 30%, #ffa5ba 70%, #ffa5ba);
+  background-size: cover;
+  border: none;
+  border-radius: 20%;
+}
+
+.modal-3__text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 176%;
+  /* or 28px */
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+}
 
 // ------------------------------------modal-4-------------------------
 // Пишем свои стили здесь
+.modal-4 {
+  width: 478px;
+  height: 512px;
+  padding: 60px 80px;
+  background-color: transparent;
+  background-image: url(../images/desktop/product-2@2x.png),
+    linear-gradient(180deg, transparent, transparent 30%, #f0d1a5 70%, #f0d1a5);
+  background-size: cover;
+  border: none;
+  border-radius: 20%;
+}
 
 // ------------------------------------modal-5-------------------------
 // Пишем свои стили здесь
+.modal-5 {
+  width: 478px;
+  height: 512px;
+  padding: 60px 80px;
+  background-color: transparent;
+  background-image: url(../images/desktop/product-3@2x.png),
+    linear-gradient(180deg, transparent, transparent 30%, #c2e297 70%, #c2e297);
+  background-size: cover;
+  border: none;
+  border-radius: 20%;
+}
 
 // ------------------------------------modal-6-------------------------
 
