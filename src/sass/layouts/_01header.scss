@@ -10,7 +10,12 @@
     z-index: 1;
   }
 }
-
+.header-scroll {
+  @include desktop {
+    position: fixed;
+    z-index: 2;
+  }
+}
 .header-container {
   display: flex;
   justify-content: space-between;
