@@ -5,7 +5,7 @@
         <use href="./images/sprite.svg#icon-logo"></use>
       </svg>
     </a>
-    <button type="button" class="menu-btn menu-open-btn">
+    <button type="button" class="menu-btn menu-open__btn">
       <svg aria-label="mobile menu switch" width="20" height="20">
         <use
           href="./images/sprite.svg#icon-Burger"
@@ -45,7 +45,7 @@
       </svg>
     </button>
 
-    <div class="burger-menu is-hidden" data-menu>
+    <div class="burger-menu is-none" data-menu>
       <button type="button" class="menu-btn menu-close-btn">
         <svg width="20" height="20">
           <use href="./images/sprite.svg#icon-close"></use>
@@ -65,19 +65,32 @@
       <nav class="burger-nav">
         <ul class="burger-nav__list list">
           <li class="burger-nav__item">
-            <a href="/" class="burger-nav__link link current">Home</a>
+            <a
+              href="#hero"
+              class="burger-nav__link link current"
+              data-nav-link-H
+              >Home</a
+            >
           </li>
           <li class="burger-nav__item">
-            <a href="#advantage" class="burger-nav__link link">About us</a>
+            <a href="#advantage" class="burger-nav__link link" data-nav-link-M
+              >About us</a
+            >
           </li>
           <li class="burger-nav__item">
-            <a href="#about" class="burger-nav__link link">How it’s made?</a>
+            <a href="#about" class="burger-nav__link link" data-nav-link
+              >How it’s made?</a
+            >
           </li>
           <li class="burger-nav__item">
-            <a href="#products" class="burger-nav__link link">Our products</a>
+            <a href="#products" class="burger-nav__link link" data-nav-link-P
+              >Our products</a
+            >
           </li>
           <li class="burger-nav__item">
-            <a href="#contacts" class="burger-nav__link link">Contact</a>
+            <a href="#contacts" class="burger-nav__link link" data-nav-link-C
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
