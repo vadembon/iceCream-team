@@ -38,6 +38,10 @@
   border-radius: 3px;
   background-color: rgb(217, 139, 139);
   transition: 500ms all $time-function;
+
+  @include mobile {
+    padding: 40px 30px;
+  }
 }
 
 /* Стили для активных классов подложки и окна */
@@ -68,7 +72,7 @@
   border: none;
   background-color: $hero-background-color;
 
-  background-image: url(../images/desktop/product-1.png);
+  background-image: url(../images/desktop/product-1@2x.png);
 
   background-repeat: no-repeat;
 
@@ -77,17 +81,16 @@
     height: 400px;
 
     top: 220px;
-    background-position: right calc(50% - 50px) bottom 0px;
-    background-size: 100%;
+    background-position: right calc(50% - 50px) bottom -5px;
+    background-size: cover;
   }
 
   @include tablet {
     width: 600px;
     height: 250px;
 
-    background-position: right calc(50% - 135px) bottom -50px;
-
-    background-size: 55%;
+    background-position: right calc(50% - 135px) bottom -220px;
+    background-size: cover;
 
     top: 35%;
     left: 50%;
@@ -97,9 +100,8 @@
     width: 600px;
     height: 250px;
 
-    background-position: right calc(50% - 135px) bottom -50px;
-
-    background-size: 55%;
+    background-position: right calc(50% - 135px) bottom -220px;
+    background-size: cover;
 
     top: 50%;
     left: 50%;
@@ -123,6 +125,7 @@
     text-transform: uppercase;
     text-align: center;
     color: $product-card3-color;
+    text-shadow: 1px 1px 13px $dark-btn-color;
 
     padding-bottom: 15px;
   }
@@ -137,7 +140,8 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
-    color: $dark-btn-color;
+    color: $product-card3-color;
+    text-shadow: 1px 1px 13px $dark-btn-color;
   }
 
   &__select {
@@ -152,6 +156,7 @@
 
     color: $dark-btn-color;
     background-color: $product-card3-color;
+    box-shadow: 1px 1px 6px 0px $dark-btn-color;
 
     border: none;
     border-radius: 4px;
@@ -168,7 +173,7 @@
     font-weight: 400;
     font-size: 10px;
     line-height: 0.9;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: $dark-btn-color;
     background-color: $product-card3-color;
@@ -180,7 +185,8 @@
     margin-left: auto;
     margin-right: auto;
 
-    background-color: $dark-title-color;
+    background-color: $product-card3-color;
+    box-shadow: 1px 1px 10px 0px $dark-btn-color;
     border: none;
     border-radius: 6px;
     display: flex;
@@ -195,20 +201,68 @@
     line-height: 0.9;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: $product-card3-color;
+    color: $dark-title-color;
   }
 
   &__icon {
-    fill: $product-card3-color;
+    fill: $dark-title-color;
     margin-left: 8px;
   }
 }
 
-.main__close-icon {
-}
-.js-modal-close {
-}
+@include desktop {
+  @-webkit-keyframes modal-buy__btn {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+  @keyframes modal-buy__btn {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
 
+  .modal-buy__btn:hover,
+  .modal-buy__btn:focus,
+  .modal-buy__btn:active {
+    -webkit-animation-name: modal-buy__btn;
+    animation-name: modal-buy__btn;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+
+  @-webkit-keyframes modal-buy__select {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+  @keyframes modal-buy__select {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+
+  .modal-buy__select:hover,
+  .modal-buy__select:focus,
+  .modal-buy__select:active {
+    -webkit-animation-name: modal-buy__select;
+    animation-name: modal-buy__select;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+}
 // ------------------------------------modal-2-------------------------
 // Пишем свои стили здесь
 
