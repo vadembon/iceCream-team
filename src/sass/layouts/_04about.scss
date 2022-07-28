@@ -5,7 +5,7 @@
     background-image: url(/src/images/mobile/about-milk-bgr.png);
     background-repeat: no-repeat;
     z-index: 3;
-   background-position: 35% 85%;
+   background-position: 35% 75%;
    background-size: 100%;
    @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -16,7 +16,7 @@
     background-image: none;
    }
    @include desktop{
-    background-position: 35% 95%;
+    background-position: 35% 90%;
     background-image: url(/src/images/desktop/about-milk-bgr.png);
     @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -44,11 +44,13 @@ background-color: #FFF5F6;
     width: 280px;
     opacity: 0;
     animation: ani 2.5s forwards;
+    margin-left: 40px;
     @media screen and (min-width: 768px) and (max-width: 1199px){
         width: 336px;
         height: 335px;
         margin-right: 32px;
         margin-top: 40px;
+        margin-left: 0px;
     }
     @include desktop{
         height: 501px;
@@ -117,10 +119,10 @@ color: #000000;
 // display: flex;
 margin-bottom: 32px;
 margin-top: 100px;
-max-width: 266px;
+max-width: 320px;
 
 @media screen and (min-width: 768px) and (max-width: 1199px){
-        max-width: 334px;
+        max-width: 290px;
         font-size: 14px;
         
     }
@@ -139,13 +141,15 @@ letter-spacing: 0.04em;
 color: #907E82;
 // display: flex;
 margin-bottom: 32px;
-max-width: 463px;
+max-width: 320px;
 @media screen and (min-width: 768px) and (max-width: 1199px){
         max-width: 334px;
         margin-bottom: 0px;
         line-height: 176%;
     }
-
+@include desktop{
+        max-width: 463px;
+    }
 }
 
 
