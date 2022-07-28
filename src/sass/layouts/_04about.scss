@@ -38,19 +38,24 @@ background-color: #FFF5F6;
   justify-content: center;
 }
 
-
+.about__cow-pic.element-animation.element-show{
+    animation: ani 2s forwards;
+}
+@keyframes ani {
+0% {opacity: 0; transform: scaleX(100%);}
+100% {opacity: 1; transform: scaleX(100%);}
+}
 .about__cow-pic{
     height: 279px;
     width: 280px;
-    opacity: 0;
-    animation: ani 2.5s forwards;
+    
     margin-left: 40px;
     @media screen and (min-width: 768px) and (max-width: 1199px){
         width: 336px;
         height: 335px;
         margin-right: 32px;
         margin-top: 40px;
-        margin-left: 0px;
+        margin-left: 40px;
     }
     @include desktop{
         height: 501px;
@@ -59,10 +64,7 @@ background-color: #FFF5F6;
     }
 }
 
-@keyframes ani {
-0% {opacity: 0;}
-100% {opacity: 1;}
-}
+
 
 
 .about__title{
