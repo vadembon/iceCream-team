@@ -22,16 +22,19 @@
     menu: document.querySelector('.burger-menu'),
     body: document.querySelector('body'),
     closeMenuLink: document.querySelector('[data-nav-link]'),
-    closeMenuLinkContact: document.querySelector('[data-nav-linkC]'),
-    closeMenuLinkProduct: document.querySelector('[data-nav-linkP]'),
-    closeMenuLinkProduct: document.querySelector('[data-nav-linkB]'),
-    closeMenuLinkProduct: document.querySelector('[data-nav-linkD]'),
+    closeMenuLinkAbout: document.querySelector('[data-nav-link-M]'),
+    closeMenuLinkHome: document.querySelector('[data-nav-link-H]'),
+    closeMenuLinkProduct: document.querySelector('[data-nav-link-P]'),
+    closeMenuLinkContact: document.querySelector('[data-nav-link-C]'),
   };
   refs.openMenuBtn.addEventListener('click', toggleMenu);
   refs.closeMenuBtn.addEventListener('click', toggleMenu);
   refs.closeMenuLink.addEventListener('click', toggleMenu);
-  refs.closeMenuLinkContact.addEventListener('click', toggleMenu);
+  refs.closeMenuLinkAbout.addEventListener('click', toggleMenu);
+  refs.closeMenuLinkHome.addEventListener('click', toggleMenu);
   refs.closeMenuLinkProduct.addEventListener('click', toggleMenu);
+  refs.closeMenuLinkContact.addEventListener('click', toggleMenu);
+
   function toggleMenu() {
     refs.menu.classList.toggle('is-none');
     refs.menu.classList.toggle('menu-scroll');
