@@ -63,7 +63,57 @@
 
 // ------------------------------------modal-2-------------------------
 // Пишем свои стили здесь
+.modal-2 {
+  padding: 60px 40px 40px;
+  background-color: #ffb8ca;
+  border-radius: 20px;
+  border: #fff solid 10px;
 
+  // transition: transform 2500ms $time-function;
+}
+
+.modal__close-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+
+  background-color: #ffb8ca;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  // &:hover {
+  //   fill: $accent-color;
+  // }
+}
+
+.cow-modal-2-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.modal-2__text {
+  position: relative;
+  z-index: 2;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.76;
+  color: #ffffff;
+
+  text-align: justify;
+}
 // ------------------------------------modal-3-------------------------
 // Пишем свои стили здесь
 .modal-3 {
