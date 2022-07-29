@@ -1,13 +1,16 @@
 body {
   font-family: $main-font;
   font-size: 12px;
+  line-height: 1.67;
 
   @include tablet {
     font-size: 14px;
+    line-height: 1.74;
   }
 
   @include desktop {
     font-size: 16px;
+    line-height: 1.76;
   }
 }
 

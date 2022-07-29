@@ -1,85 +1,64 @@
-.section.advantage {
-  padding: 0;
-}
-
-
 .advantage {
   background-color: $about-footer-background-color;
 }
-
-
 
 .advantage__list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 32px;
+  gap: 98px;
   @include tablet {
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 22px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 22px;
   }
-  @include desktop{
+  @include desktop {
     gap: 115px;
   }
 }
 
-
-
 .advantage__item {
-  margin-top: 66px;
-  &:first-child{
-margin-top: 106px;
-  }
+  width: 220px;
   @include tablet {
-      margin-top: 146px;
-      &:first-child{
-          margin-top: 146px;
-              }
-     }
-     @include desktop{
-   width: 100%;
-   margin-top: 211px;
-   &:first-child{
-      margin-top: 211px;
-          }
+    width: 250px;
+  }
+  @include desktop {
+    width: 288px;
+  }
 }
-}
-
-
-
 
 .advantage__subtitle {
+  position: relative;
+  font-size: 36px;
+  margin-bottom: 19px;
+  @include tablet {
+    margin-bottom: 13px;
+    font-size: 48px;
+  }
+  @include desktop {
+    margin-bottom: 16px;
+    font-size: 59px;
+  }
 
-font-family: $title-font;
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 1.13;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-color: #D41443;
-margin-bottom: 4px;
-position: relative;
-height: 56px;
-@include tablet{
-  margin-bottom: 13px;
-font-size: 48px;
-line-height: 1.14;
-text-transform: none;
+  &.element-animation.element-show {
+    animation-name: advantage;
+    animation-duration: 1s;
+  }
 }
 
-@include desktop{
-  margin-bottom: 16px;
-  font-size: 58px;
-line-height: 1.13;
-height: 65px;
+@keyframes advantage {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
-}
 
-
-
-.cow-milk::before{
+.cow-milk::before {
   content: '';
   top: -66px;
   width: 33px;
@@ -87,18 +66,15 @@ height: 65px;
   background-size: 33px 50px;
   position: absolute;
   background-image: url(../images/desktop/advantages-1.png);
-  @include tablet{
+  @include tablet {
     top: -86px;
   }
-  @include desktop{
+  @include desktop {
     top: -90px;
   }
 }
 
-
-
-
-.apple::before{
+.apple::before {
   content: '';
   top: -66px;
   width: 50px;
@@ -106,17 +82,15 @@ height: 65px;
   background-size: 50px 50px;
   position: absolute;
   background-image: url(../images/desktop/advantages-2.png);
-  @include tablet{
+  @include tablet {
     top: -86px;
   }
-  @include desktop{
+  @include desktop {
     top: -90px;
   }
 }
 
-
-
-.heart::before{
+.heart::before {
   content: '';
   top: -66px;
   width: 44px;
@@ -124,34 +98,14 @@ height: 65px;
   background-size: 44px 50px;
   position: absolute;
   background-image: url(../images/desktop/advantages-3.png);
-  @include tablet{
+  @include tablet {
     top: -86px;
   }
-  @include desktop{
+  @include desktop {
     top: -90px;
   }
 }
 
-
 .advantage__text {
-  width: 220px;
-  font-family: $main-font;
-font-style: normal;
-font-weight: 700;
-font-size: 12px;
-line-height: 20px;
-/* or 20px */
-color: #000000;
-@include tablet{
-  width: 250px;
-font-size: 14px;
-line-height: 174%;
-}
- @include desktop{
-  font-size: 16px;
- line-height: 176%;
- /* or 28px */
- letter-spacing: 0.02em;
- width: 288px;
-}
+  font-weight: 700;
 }
