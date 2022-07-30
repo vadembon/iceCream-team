@@ -159,7 +159,7 @@
   transition-duration: 250ms;
 
   &:hover {
-    box-shadow: 3px 3px 6px hsla(1, 1, 1, 0.3);
+    box-shadow: 3px 3px 6px rgba(1, 1, 1, 0.3);
     transform: scale(1.03);
   }
 }

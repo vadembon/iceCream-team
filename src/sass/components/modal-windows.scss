@@ -38,7 +38,30 @@
   border-radius: 3px;
   background-color: rgb(217, 139, 139);
   transition: 500ms all $time-function;
-
+  ::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+  ::-webkit-scrollbar-button {
+    background-color: #666;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #999;
+  }
+  ::-webkit-scrollbar-track-piece {
+    background-color: #ffffff;
+  }
+  ::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: #666;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-corner {
+    background-color: #999;
+  }
+  ::-webkit-resizer {
+    background-color: #666;
+  }
   @include mobile {
     padding: 40px 30px;
   }
@@ -337,8 +360,6 @@
   @media screen and (min-width: $desktop) {
     width: calc((100% - 64px) / 3);
     max-width: 368px;
-    height: 60%;
-    padding: 60px;
   }
 
   background-color: transparent;
@@ -384,8 +405,6 @@
   @media screen and (min-width: $desktop) {
     width: calc((100% - 64px) / 3);
     max-width: 368px;
-    height: 60%;
-    padding: 60px;
   }
   padding: 60px 80px;
   background-color: transparent;
@@ -419,8 +438,6 @@
   @media screen and (min-width: $desktop) {
     width: calc((100% - 64px) / 3);
     max-width: 368px;
-    height: 60%;
-    padding: 60px;
   }
   padding: 60px 80px;
   background-color: transparent;
