@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./sass/index.scss" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
     <script type="module" src="./index.js"></script>
     <script
       defer
@@ -20,6 +20,11 @@
     ></script>
   </head>
   <body class="body">
+    <a class="button-up" href="#hero">
+      <svg class="button-up__icon" width="13" height="13">
+        <use href="./images/sprite.svg#icon-btn-arrow-white"></use>
+      </svg>
+    </a>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <include src="./partials/01header.html"></include>
     <include src="./partials/02hero.html"></include>
