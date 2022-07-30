@@ -12,11 +12,11 @@
   @include tablet {
     font-size: 48px;
     line-height: 1.14;
+    letter-spacing: 0.06em;
   }
   @include desktop {
     font-size: 58px;
     line-height: 1.38;
-    letter-spacing: 0.06em;
   }
 }
 

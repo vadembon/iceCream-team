@@ -1,19 +1,16 @@
-:root {
-  --main-font: 'DM Sans', sans-serif;
-}
-
 .contacts .container {
+  padding: 0 20px;
   @include tablet {
     padding: 0 16px;
   }
 }
 
-.section.contact {
+.section.contacts {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.contact {
+.contacts {
   background-image: linear-gradient(
     $white-color 21%,
     $about-footer-background-color 21%
@@ -70,17 +67,13 @@
       margin-right: 0;
     }
   }
-  // @media screen and (min-width: $mobile) {
-  //   width: 100%;
-  //   max-width: 480px;
-  // }
+
   @media screen and (min-width: $tablet) {
     width: 224px;
     min-height: 528px;
     margin-bottom: 60px;
     margin-left: 0;
     margin-right: 32px;
-    // text-align: start;
   }
   @media screen and (min-width: $desktop) {
     min-width: 368px;
@@ -91,9 +84,6 @@
 .contacts-card__title {
   margin-top: 0;
   margin-bottom: 20px;
-  // margin-left: auto;
-  // margin-right: auto;
-
   width: 80px;
 
   font-family: $main-font;
@@ -105,12 +95,10 @@
   letter-spacing: 0.04em;
 
   color: $white-color;
-  //   background-color: $product-card2-color;
   background-color: $product-card2-color;
   @media screen and (min-width: $tablet) {
     margin-bottom: 32px;
     font-size: 16px;
-    // margin-left: 0;
   }
 }
 
