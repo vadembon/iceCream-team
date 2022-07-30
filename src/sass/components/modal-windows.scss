@@ -50,6 +50,7 @@
 .overlay.active {
   opacity: 1;
   visibility: visible;
+  overflow: auto;
 }
 
 /* Стили для кнопки закрытия */
@@ -320,57 +321,118 @@
 // ------------------------------------modal-3-------------------------
 // Пишем свои стили здесь
 .modal-3 {
-  width: 478px;
-  height: 512px;
-  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 90%;
+  height: 80%;
+  padding: 20px 20px 30px;
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 32px) / 3);
+    height: 70%;
+    padding: 30px 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 64px) / 3);
+    max-width: 368px;
+    height: 60%;
+    padding: 60px;
+  }
+
   background-color: transparent;
   background-image: url(../images/desktop/product-1@2x.png),
     linear-gradient(180deg, transparent, transparent 30%, #ffa5ba 70%, #ffa5ba);
-  background-size: cover;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
   border: none;
-  border-radius: 20%;
+  border-bottom-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+  // overflow: scroll;
 }
 
 .modal-3__text {
-  font-family: 'DM Sans';
-  font-style: normal;
+  display: block;
   font-weight: 700;
   font-size: 20px;
-  line-height: 176%;
-  /* or 28px */
-
+  line-height: 1.76;
   text-align: center;
   letter-spacing: 0.04em;
 
-  color: #ffffff;
+  color: $white-color;
+  overflow: auto;
 }
 
 // ------------------------------------modal-4-------------------------
 // Пишем свои стили здесь
 .modal-4 {
-  width: 478px;
-  height: 512px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 90%;
+  height: 80%;
+  padding: 20px 20px 30px;
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 32px) / 3);
+    height: 70%;
+    padding: 30px 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 64px) / 3);
+    max-width: 368px;
+    height: 60%;
+    padding: 60px;
+  }
   padding: 60px 80px;
   background-color: transparent;
   background-image: url(../images/desktop/product-2@2x.png),
     linear-gradient(180deg, transparent, transparent 30%, #f0d1a5 70%, #f0d1a5);
-  background-size: cover;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
   border: none;
-  border-radius: 20%;
+  border-bottom-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+  // overflow: scroll;
 }
 
 // ------------------------------------modal-5-------------------------
 // Пишем свои стили здесь
 .modal-5 {
-  width: 478px;
-  height: 512px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 90%;
+  height: 80%;
+  padding: 20px 20px 30px;
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 32px) / 3);
+    height: 70%;
+    padding: 30px 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 64px) / 3);
+    max-width: 368px;
+    height: 60%;
+    padding: 60px;
+  }
   padding: 60px 80px;
   background-color: transparent;
   background-image: url(../images/desktop/product-3@2x.png),
     linear-gradient(180deg, transparent, transparent 30%, #c2e297 70%, #c2e297);
-  background-size: cover;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
   border: none;
-  border-radius: 20%;
+  border-bottom-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+  // overflow: scroll;
 }
 
 // ------------------------------------modal-6-------------------------
