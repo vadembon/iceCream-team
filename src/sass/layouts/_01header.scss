@@ -3,6 +3,7 @@
   width: -webkit-fill-available;
   background: $hero-background-color;
   z-index: 3;
+  backdrop-filter: blur(6px);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   @include tablet {
