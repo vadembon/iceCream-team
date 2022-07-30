@@ -7,6 +7,7 @@
   line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  text-align: center;
 
   @include tablet {
     font-size: 48px;
@@ -20,14 +21,14 @@
 }
 
 .pre-title {
-  color: $dark-title-color;
+  color: $light-subtitle-color;
   font-family: $title-font;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.17;
-
   text-transform: uppercase;
+  text-align: center;
 
   @include tablet {
     font-size: 26px;
