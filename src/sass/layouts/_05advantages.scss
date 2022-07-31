@@ -39,33 +39,17 @@
     margin-bottom: 16px;
     font-size: 59px;
   }
-
-  &.element-animation.element-show {
-    animation-name: advantage;
-    animation-duration: 1s;
-  }
-}
-
-@keyframes advantage {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 
 .cow-milk::before {
   content: '';
+  position: absolute;
   top: -66px;
   width: 33px;
   height: 50px;
-  background-size: 33px 50px;
-  position: absolute;
+
   background-image: url(../images/desktop/advantages-1.png);
+  background-size: 33px 50px;
   @include tablet {
     top: -86px;
   }
@@ -76,12 +60,13 @@
 
 .apple::before {
   content: '';
+  position: absolute;
   top: -66px;
   width: 50px;
   height: 50px;
-  background-size: 50px 50px;
-  position: absolute;
+
   background-image: url(../images/desktop/advantages-2.png);
+  background-size: 50px 50px;
   @include tablet {
     top: -86px;
   }
@@ -92,12 +77,13 @@
 
 .heart::before {
   content: '';
+  position: absolute;
   top: -66px;
   width: 44px;
   height: 50px;
-  background-size: 44px 50px;
-  position: absolute;
+
   background-image: url(../images/desktop/advantages-3.png);
+  background-size: 44px 50px;
   @include tablet {
     top: -86px;
   }
