@@ -2,6 +2,8 @@ body {
   font-family: $main-font;
   font-size: 12px;
   line-height: 1.67;
+  letter-spacing: 00.04em;
+  font-weight: 500;
 
   @include tablet {
     font-size: 14px;
