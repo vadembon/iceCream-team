@@ -1,3 +1,28 @@
+.home-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: rgb(225, 121, 146);
+  background-color: rgba(225, 121, 146, 0.4);
+  transform: rotate(-90deg);
+  transition: transform 300ms $time-function;
+
+  @include desktop {
+    display: none;
+  }
+
+  &:hover {
+    transform: rotate(270deg) scale(1.1);
+  }
+}
+
 .header {
   position: fixed;
   width: -webkit-fill-available;
