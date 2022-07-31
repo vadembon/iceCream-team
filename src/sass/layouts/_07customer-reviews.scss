@@ -2,6 +2,15 @@
   padding-top: 0;
 }
 
+[data-aos='rotate-c'] {
+  transform: rotate(-360deg);
+  transition-property: transform;
+}
+
+[data-aos='rotate-c'].aos-animate {
+  transform: rotate(0deg);
+}
+
 .feedback .container {
   margin: 0 auto;
 }
