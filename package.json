@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://AlexAmanitas.github.io/iceCream-team-18",
+  "homepage": "https://vadembon.github.io/iceCream-team",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /iceCream-team-18/"
+    "build": "parcel build src/*.html --public-url /iceCream-team/"
   },
   "repository": {
     "type": "git",
