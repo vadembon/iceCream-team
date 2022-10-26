@@ -1,0 +1,2 @@
+window.onscroll=function(){0!==(window.pageYOffset||document.documentElement.scrollTop)?(document.querySelector(".header-scroll").style.background="rgba(255, 184, 202, 0.7)",document.querySelector(".header").style.backdropFilter="blur(6px)"):(document.querySelector(".header-scroll").style.background="transparent",document.querySelector(".header").style.backdropFilter="none")};
+//# sourceMappingURL=index.f62f7be3.js.map
